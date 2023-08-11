@@ -28,7 +28,7 @@ function Login() {
       }
       if (data.status === true) {
         localStorage.setItem("chat", JSON.stringify(data.user));
-        navigate("/chat");
+        navigate("/");
       }
     }
   };
