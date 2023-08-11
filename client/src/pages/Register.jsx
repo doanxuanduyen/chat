@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link,  useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
@@ -31,7 +31,7 @@ function Register() {
       }
       if (data.status === true) {
         localStorage.setItem("chat", JSON.stringify(data.user));
-        navigate("/chat");
+        navigate("/");
       }
     }
   };
