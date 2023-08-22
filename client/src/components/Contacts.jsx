@@ -34,7 +34,9 @@ function Contacts({ contacts, currentUser, changeChat }) {
                   className={`contact ${
                     index === currentSelected ? "selected" : ""
                   } ${
-                    index === currentSelected ? "bg-[#9a86f3]" : "bg-[#ffffff34]"
+                    index === currentSelected
+                      ? "bg-[#9a86f3]"
+                      : "bg-[#ffffff34]"
                   } cursor-pointer w-[90%] rounded p-2 flex gap-4 items-center `}
                 >
                   <div className="avatar">
